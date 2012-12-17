@@ -9,30 +9,35 @@
 		</div>
 	</div>
 	
-	<div id="languages-panel" class="page-panel">
-		<div class="page-panel-header">
-			<h2>Languages</h2>
+	<div id="project-slider-panel" class="page-panel">
+		<div id="project-slider-header" class="page-panel-header">
+			<h2>Recent Projects</h2>
 		</div>
-		<div class="content">
-			<div id="application-section">
-				<h2>Application Programming</h2>
-				<ul>
-					<li>Java</li> 
-					<li>C++ </li>
-					<li>C# and XNA</li>
-					<li>ActionScript 3.0</li>
-				</ul>
-			</div>
-			
-			<div id="web-dev-section">
-				<h2>Web Development<h2/>
-				<ul>
-					<li>Javascript and JQuery</li>
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>PHP</li>
-				</ul>
+		<div id="project-slider" class="content">
+			<!--Start of the project slider -->
+			<div class="slider">
+				<div class="slider-container">
+					<!--Slider left container -->
+					<div class="slider-content-left">
+						<a class="slider-button">
+							<span class="icon-caret-left slider-arrow-left"></span>
+						</a>
+					</div>
+
+					<div class="slider-content-middle">
+						<p>middle</p>
+					</div>
+
+					<!--Slider right container -->
+					<div class="slider-content-right">
+						<a class="slider-button">
+							<span class="slider-arrow-right"></span>
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
+	</div>
+	
 	</div>
 

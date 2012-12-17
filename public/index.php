@@ -18,6 +18,8 @@ if(!isset($_SESSION['username']) || !isset($_COOKIE['username'])) {
 		
 		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-con" />
 		<link rel="stylesheet" type="text/css" href="css/mainStyle.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome-ie7.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
 		
 		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
 		<script type="text/javascript" src="js/top-nav.js"></script>
@@ -76,11 +78,11 @@ if(!isset($_SESSION['username']) || !isset($_COOKIE['username'])) {
 					<div id="button-overlay" class="right-button">
 					</div>
 					
-					<div id="site-search" class="left-button">
+					<!--<div id="site-search" class="left-button">
 						<form id="site-search-form" method="" action="">
 							<input id="site-search-text" type="text" value="Search" />
 						</form>
-					</div>
+					</div>-->
 				</div>
 			</div>
 		</div>
@@ -162,7 +164,7 @@ if(!isset($_SESSION['username']) || !isset($_COOKIE['username'])) {
 		<div id="main-content">
 			<noscript>
 				<div id="javascript-warning" class="error-panel">
-					<p>Please enable Javascript to properly use this site</p>
+					<p>Please enable Javascript to properly use this site.</p>
 				</div>
 			</noscript>
 			<div id="banner" class="page-panel">
@@ -176,12 +178,15 @@ if(!isset($_SESSION['username']) || !isset($_COOKIE['username'])) {
 						<p>
 							I am a 23 year old Web and Application Programmer from Allentown Pennsylvania. I'm currently in my last year at Pennsylvania College of Technology
 							for a Bachelors in Software Engineering. I've been programming for 6 years now and have loved every second of it. I started out with C++ and Java in
-							high school, but switched gears a bit to web development in college. In my free time I like to work on open source projects. Over the summer I worked
-							as freelance developer for a hair style website called blacknaps.org where I developed both the front and back end of a WordPress plugin. Being as that
-							project is now in the maintance phase I'm looking to take on more freelance work.
+							high school, but switched gears a bit to web development in college. In my free time I like to work on open source projects and learn more about programming.
+							 Over the summer I worked as freelance developer for a hair style website called blacknaps.org where I developed both the front and back end of a WordPress plugin.
+							 Being as that project is now in the maintance phase I'm looking to take on more freelance work.
 							<br /><br />
-							You can view all the projects I've worked on my "Projects" page. If you would like to contact please leave me an email. If you'd like to know 
-							anything else about me feel free to view or download my resume.
+							There are two places you can view the projects I am or have worked on. One being here, on the projects page; the second being on my github.
+							If you're interested in me doing web development for you, please feel free to contact me view email. My resume is also here to view and download.
+							It contains my most recient projects and my academic information.
+
+
 						</p>
 					</div>
 				</div>

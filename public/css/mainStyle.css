@@ -122,10 +122,10 @@ a:focus, a:active {
 
 #main-nav a:hover {
 	color: #ffffff;
-	padding: 9px 15px;
+	padding: 8px 15px;
 	padding-top: 10px;
 	margin-left: 0;
-	border-bottom: 1px solid #7F7F7F;
+	border-bottom: 2px solid #7F7F7F;
 }
 
 #main-nav a:foucs, #main-nav a:active {
@@ -135,9 +135,8 @@ a:focus, a:active {
 .selected-link {
 	color: #ffffff !important;
 	background-color: #000000;
-	padding: 9px 15px !important;
-	padding-top: 9px !important;
-	border-bottom: 1px solid #2580a2 !important;
+	padding: 8px 15px !important;
+	border-bottom: 2px solid #2580a2 !important;
 }
 
 #top-nav {
@@ -290,9 +289,9 @@ a:focus, a:active {
 	border-radius: 2px;
 	-moz-border-radius: 2px;
 	
-	box-shadow: 0 1px 4px 1px #BABABA;
-	-webkit-box-shadow: 0 1px 4px 1px #BABABA;
-	-moz-box-shadow: 0 1px 4px 1px #BABABA;
+	box-shadow: 0 2px 9px 2px #E3E3E3;
+	-webkit-box-shadow: 0 2px 9px 2px #E3E3E3;
+	-moz-box-shadow: 0 2px 9px 2px #E3E3E3;
 }
 
 .error-panel p {
@@ -432,6 +431,10 @@ button:hover {
 	margin-bottom: 15px;
 }
 
+#javascript-warning p {
+	font-size: 19px;
+}
+
 #languages-panel {
 	overflow: hidden;
 }
@@ -466,12 +469,12 @@ button:hover {
 }
 
 #other-contacts {
-	font-size: 16px;
+	font-size: 19px;
 	text-align: center;
 }
 
 .contacts-link:link, .contacts-link:visited {
-	font-size: 16px;
+	font-size: 19px;
 	padding-right: 15px;
 	margin-right: 15px;
 	border-right: 1px solid #000000;
@@ -594,4 +597,87 @@ button:hover {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+}
+
+.slider-arrow-left {
+	font-size: 160px;
+	line-height: 1.6;
+	height: 100%;
+}
+
+.slider-arrow-right {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-top: 110px solid transparent;
+	border-bottom: 110px solid transparent;
+	border-left: 60px solid gray;
+}
+
+.slider-arrow-down {
+	width: 0;
+	height: 0;
+	border-left: 110px solid transparent;
+	border-right: 110px solid transparent;
+	border-top: 60px solid gray;
+}
+
+.slider-arrow-up {
+	width: 0;
+	height: 0;
+	border-left: 110px solid transparent;
+	border-right: 110px solid transparent;
+	border-bottom: 60px solid gray;
+}
+
+/*Slider styles*/
+
+.slider {
+	position: relative;
+	width: 100%;
+	border: 1px solid black;
+	overflow: hidden;
+}
+
+.slider-container {
+	position: relative;
+	float: left;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.slider-content-left {
+	float: left;
+	margin-right: 4px;
+	width: 5%;
+}
+
+.slider-content-right {
+	float: right;
+	margin-left: 4px;
+	width: 5%;
+}
+
+.slider-content-middle {
+	float: left;
+	height: 100%;
+	border: 1px solid black;
+}
+
+.slider-button {
+	display: block;
+	overflow: hidden;
+	border: 1px solid black;
+	height: 220px;
+	padding: 2px;
+}
+
+.slider-button:link, .slider-button:visited {
+	text-decoration: none;
+}
+
+.slider-button:hover, .slider-button:active {
+	text-decoration: none;
+	background-color: #1B1B1B;
 }
