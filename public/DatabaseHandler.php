@@ -11,6 +11,28 @@ class DatabaseHandler {
 			echo $e->getMessage();
 		}
 	}
+
+	public function executeQuery($query, array $parameters = array(), $fetch_type = PDO::FETCH_ASSOC) {
+		$result = array();
+		
+		$sth = $this->handle->prepare($query);
+		
+		if($sth->execute($parameters)) {
+			while($row = $sth->fetch($fetch_type)) {
+				array_push($result, $row);
+			}
+		}
+		
+		return $result;
+	}
+
+	public function executeUpdate($query, array $parameters = array(), $fetch_type = PDO::FETCH_ASSOC) {
+		$result = array();
+		
+		$sth = $this->handle->prepare($query);
+		
+		return $sth->execute($parameters);
+	}
 	
 	public function getProjects() {
 		$result = array();
@@ -72,5 +94,12 @@ class DatabaseHandler {
 		$sth = $this->$handle->prepare($sql);
 		
 		return $sth->execute(array(null, $user_id, $page_id, $comment));
+	}
+
+	public function sendMessage($name, $email, $message) {
+		$sql = "INSERT INTO message (message.message_id, message.sender_name, message.sender_email, message.message)
+				VALUES ('', ?, ?, ?);";
+
+		return $this->executeUpdate($sql, array($name, $email, $message));
 	}
 }

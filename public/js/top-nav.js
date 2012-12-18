@@ -587,8 +587,35 @@ $(document).ready(function() {
 		signupForm:			new FormView($('#signup-panel-form'))
 	});
 	
-	
-	
+	var contactForm = new FormView($('#contact-form'));
+
+	$('#send-message').live('click', function(event) {
+		$.ajax({
+			url: 'sendMessage.php',
+			type: 'POST',
+			dataType: 'json',
+			data: {
+				'sender-name': $('#sender-name').val(),
+				'sender-email': $('#sender-email').val(),
+				'sender-message': $('#sender-message').val()
+			},
+			success: function(data, textStatus, jqXHR) {
+				if(!data.error) {
+					$('#sender-name').val('');
+					$('#sender-email').val('');
+					$('#sender-message').val('');
+					//$('#contact-form').filter(':input:not(:submit)').val('');
+				}
+
+				$('#contact-response-message').text(data.message).show();
+			},
+			error: function(jqXHR, textStatus, errorThrown) {
+				alert('There was an error while trying to contact the server.');
+			}
+		});
+		return false;
+	});
+
 	if(username) {
 		console.log(readCookie('username'));
 		WIDGETS.setOnTop('#settings', SideEnum.RIGHT);

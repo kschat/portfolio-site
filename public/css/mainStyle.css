@@ -321,17 +321,17 @@ a:focus, a:active {
 
 /* Rules for input fields */
 
-input[type=text], input[type=password] {
+input[type=text], input[type=password], textarea {
 	height: 15px;
 	border: 1px solid #9B9B9B;
 }
 
-input[type=text]:hover, input[type=password]:hover {
+input[type=text]:hover, input[type=password]:hover, textarea {
 	outline: none;
 	border: 1px solid #626161;
 }
 
-input[type=text]:focus, input[type=password]:focus {
+input[type=text]:focus, input[type=password]:focus, textarea {
 	outline: none;
 	border: 1px solid #56A5EC;
 }
@@ -601,7 +601,7 @@ button:hover {
 }
 
 .slider-arrow-left {
-	font-size: 160px;
+	font-size: 11em;
 	line-height: 1.6;
 	height: 100%;
 }
@@ -644,6 +644,7 @@ button:hover {
 	position: relative;
 	float: left;
 	width: 100%;
+	min-height: 100%;
 	padding: 0;
 	margin: 0;
 }
@@ -651,7 +652,9 @@ button:hover {
 .slider-content-left {
 	float: left;
 	margin-right: 4px;
-	width: 5%;
+	width: 25%;
+	min-height: 100%;
+	border: 1px solid green;
 }
 
 .slider-content-right {
@@ -681,4 +684,79 @@ button:hover {
 .slider-button:hover, .slider-button:active {
 	text-decoration: none;
 	background-color: #1B1B1B;
+}
+
+.slider-sidebar {
+	border: 1px solid black;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.slider-sidebar-panel {
+	display: inline-block;
+	list-style: none;
+	background: #000;
+	width: 100%;
+	height: 40px;
+}
+
+.slider-sidebar-panel a {
+	display: block;
+	height: 100%;
+}
+
+.page-panel input[type="text"] {
+	width: 400px;
+	height: 24px;
+	font-size: 14px;
+	padding: 4px;
+
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+.page-panel textarea {
+	width: 100%;
+	max-width: 100%;
+	height: 200px;
+	font-size: 14px;
+
+	padding: 6px;
+	padding-right: 0;
+	border: 1px solid #9B9B9B;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+.page-panel input[type="submit"] {
+	background: #F2F2F2;
+	border: 1px solid #CCC;
+	color: #5A5A5A;
+	margin-top: 5px;
+	padding: 5px 12px;
+	font-size: 14px;
+	font-weight: bold;
+
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#FFFFFF', endColorstr='#E7E7E7'); /* IE6 & IE7 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#FFFFFF', endColorstr='#E7E7E7')"; /* IE8+ */
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#E7E7E7)); /* Safari & Chrome */
+	background: -moz-linear-gradient(top, #FFFFFF, #E7E7E7); /* Firefox */
+	background: -o-linear-gradient(top, #FFFFFF, #E7E7E7); /* Opera */
+	
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+}
+
+.page-panel input[type="submit"]:hover {
+	cursor: pointer;
+	color: #000;
+}
+
+.page-panel label {
+	font-weight: bold;
+	font-size: 18px;
 }
