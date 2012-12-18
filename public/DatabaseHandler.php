@@ -102,4 +102,27 @@ class DatabaseHandler {
 
 		return $this->executeUpdate($sql, array($name, $email, $message));
 	}
+
+	public function getMessages($read = 0) {
+		$sql = "SELECT message.message_id, message.sender_name, message.sender_email, message.message 
+				FROM message
+				WHERE message.message_read LIKE ?";
+
+		return $this->executeQuery($sql, array($read));
+	}
+
+	public function deleteMessage($id) {
+		$sql = "DELETE FROM message 
+				WHERE message.message_id = ?";
+
+		return $this->executeQuery($sql, array($id));
+	}
+
+	public function markMessage($id, $value = 0) {
+		$sql = "UPDATE message
+				SET message.message_read = ?
+				WHERE message.message_id = ?";
+
+		return $this->executeUpdate($sql, array($value, $id));
+	}
 }

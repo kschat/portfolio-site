@@ -19,9 +19,16 @@
 				<div class="slider-container">
 					<!--Slider left container -->
 					<div class="slider-content-left">
-						<a class="slider-button">
-							<span class="icon-caret-left slider-arrow-left"></span>
-						</a>
+						<ul class="slider-sidebar">
+							<li class="slider-sidebar-panel">
+								<a href="#">
+									<img src="images/MCVC.png" width="20px" height="20px" />
+									Minecraft Version Control
+								</a>
+							</li>
+							<li class="slider-sidebar-panel">a</li>
+							<li class="slider-sidebar-panel">a</li>
+						</ul>
 					</div>
 
 					<div class="slider-content-middle">

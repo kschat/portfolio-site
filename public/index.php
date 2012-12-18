@@ -162,6 +162,13 @@ if(!isset($_SESSION['username']) || !isset($_COOKIE['username'])) {
 		</div>
 
 		<div id="main-content">
+			<p>
+			<?php 
+				if(isset($_SESSION['user_id']) && $_SESSION['user_id'] == 22) {
+					include_once 'messagePanel.php';
+				} 
+			?>
+			</p>
 			<noscript>
 				<div id="javascript-warning" class="error-panel">
 					<p>Please enable Javascript to properly use this site.</p>

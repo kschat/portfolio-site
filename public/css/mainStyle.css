@@ -756,6 +756,13 @@ button:hover {
 	color: #000;
 }
 
+.selected-toggle-button {
+	color: #000000 !important;
+	
+	-webkit-box-shadow: 2px 6px 6px rgba(0, 0, 0, .1) inset !important;
+	-moz-box-shadow: 2px 6px 6px rgba(0, 0, 0, .1) inset !important;
+}
+
 .page-panel label {
 	font-weight: bold;
 	font-size: 18px;
