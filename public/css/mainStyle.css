@@ -178,7 +178,7 @@ a:focus, a:active {
 	position: relative;
 	float: right;
 	right: -9px;
-	margin-top: 24px;
+	margin-top: 30px;
 	border: 1px solid #999;
 	padding: 5px;
 	border-bottom-right-radius: 5px;
@@ -238,7 +238,7 @@ a:focus, a:active {
 	display: none;
 	position: absolute;
 	float:right;
-	background: #000000;
+	background: #1B1B1B;
 	right: 0px;
 	z-index: 2;
 	width: 40px;
@@ -307,7 +307,8 @@ a:focus, a:active {
 #panel-overlay {
 	display: none;
 	position: absolute;
-	background: #000;
+	right: 25px;
+	background: #1B1B1B;
 	width: 500px;
 	height: 500px;
 	z-index: 2;
