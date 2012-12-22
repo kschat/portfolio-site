@@ -147,7 +147,7 @@ if(!isset($_SESSION['username']) || !isset($_COOKIE['username'])) {
 
 		<div id="main-content">
 			<?php 
-				if(isset($_SESSION['user_id']) && $_SESSION['user_id'] == 22) {
+				if(isset($_SESSION['user_role']) && $_SESSION['user_role'] == 'admin') {
 					include_once 'messagePanel.php';
 				} 
 			?>
