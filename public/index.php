@@ -94,23 +94,15 @@ if(!isset($_SESSION['username']) || !isset($_COOKIE['username'])) {
 					</div>
 
 					<form id="login-panel-form" action="" method="post">
-						<table id="login-table">
-						<tr>
-							<td><label for="login-email">Email:</label></td>
-							<td><input type="text" id="login-email" name="login-email" /></td>
-						</tr>
-						<tr>
-							<td><label for="login-password">Password:</label></td>
-							<td><input type="password" id="login-password" name="login-password" /></td>
-						</tr>
-						<tr>
-							<td><label for="login-remember">Remember me</label></td>
-							<td><input type="checkbox" id="login-remember" name="login-remember" /></td>
-						</tr>
-						</table>
+						<label for="login-email">Email:</label><br />
+						<input type="text" id="login-email" name="login-email" /><br />
+						<label for="login-password">Password:</label><br />
+						<input type="password" id="login-password" name="login-password" /><br />
+						<label for="login-remember">Remember me</label>
+						<input type="checkbox" id="login-remember" name="login-remember" /><br />
+
 						<a id="login-signup" href="">Sign up</a><br />
 						<button type="submit" id="login-submit" name="login-submit" value="login" >login</button>
-						<!--<input type="submit" id="login-submit" name="login-submit" value="login" />-->
 					</form>
 				</div>
 
@@ -123,28 +115,21 @@ if(!isset($_SESSION['username']) || !isset($_COOKIE['username'])) {
 					</div>
 					
 					<form id="signup-panel-form" action="" method="post">
-						<table id="signup-table">
-						<tr>
-							<td><label for="signup-fname">First name:</label></td>
-							<td><input type="text" id="signup-fname" name="signup-fname" /></td>
-						</tr>
-						<tr>
-							<td><label for="signup-lname">Last name:</label></td>
-							<td><input type="text" id="signup-lname" name="signup-lname" /></td>
-						</tr>
-						<tr>
-							<td><label for="signup-email">Email:</label></td>
-							<td><input type="text" id="signup-email" name="signup-email" /></td>
-						</tr>
-						<tr>
-							<td><label for="signup-password1">Password:</label></td>
-							<td><input type="password" id="signup-password1" name="signup-password1" /></td>
-						</tr>
-						<tr>
-							<td><label for="signup-password2">Confirm password:</label></td>
-							<td><input type="password" id="signup-password2" name="signup-password2" /></td>
-						</tr>
-						</table>
+						<label for="signup-fname">First name:</label><br />
+						<input type="text" id="signup-fname" name="signup-fname" /><br />
+
+						<label for="signup-lname">Last name:</label><br />
+						<input type="text" id="signup-lname" name="signup-lname" /><br />
+
+						<label for="signup-email">Email:</label><br />
+						<input type="text" id="signup-email" name="signup-email" /><br />
+
+						<label for="signup-password1">Password:</label><br />
+						<input type="password" id="signup-password1" name="signup-password1" /><br />
+
+						<label for="signup-password2">Confirm password:</label><br />
+						<input type="password" id="signup-password2" name="signup-password2" /><br />
+
 						<button type="submit" id="signup-submit" value="Sign up" >Sign up</button>
 					</form>
 				</div>
