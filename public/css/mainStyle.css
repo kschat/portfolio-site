@@ -180,7 +180,8 @@ a:focus, a:active {
 	right: -9px;
 	margin-top: 30px;
 	border: 1px solid #999;
-	padding: 5px;
+	padding: 10px;
+	padding-top: 5px;
 	border-bottom-right-radius: 5px;
 	border-bottom-left-radius: 5px;
 	
@@ -192,7 +193,7 @@ a:focus, a:active {
 	-moz-box-shadow: 1px 0 20px 0px #858586;
 
 	background: #ffffff;
-	font-size: 15px;
+	font-size: 17px;
 }
 
 #panel-body {
@@ -226,8 +227,14 @@ a:focus, a:active {
 	float: right;
 }
 
-#login-table input[type=text], input[type=password] {
-	width: 125px;
+.nav-panel input[type="text"], .nav-panel input[type="password"] {
+	width: 375px;
+	height: 18px;
+	font-size: 14px;
+	padding: 4px;
+
+	border-radius: 5px;
+	-moz-border-radius: 5px;
 }
 
 #login-table table tr td {
@@ -262,12 +269,8 @@ a:focus, a:active {
 	display: none;
 }
 
-#signup-panel input[type=submit] {
+#signup-panel button[type=submit] {
 	float: right;
-}
-
-#signup-table input[type=text], input[type=password] {
-	width: 125px;
 }
 
 #settings, #settings-link {
@@ -706,7 +709,7 @@ button:hover {
 	height: 100%;
 }
 
-.page-panel input[type="text"] {
+.page-panel input[type="text"], .page-panel input[type="password"] {
 	width: 400px;
 	height: 24px;
 	font-size: 14px;
@@ -729,7 +732,7 @@ button:hover {
 	-moz-border-radius: 5px;
 }
 
-.page-panel input[type="submit"] {
+.page-panel input[type="submit"], .nav-panel button[type="submit"] {
 	background: #F2F2F2;
 	border: 1px solid #CCC;
 	color: #5A5A5A;
@@ -751,7 +754,7 @@ button:hover {
 	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
 }
 
-.page-panel input[type="submit"]:hover {
+.page-panel input[type="submit"]:hover, .nav-panel button[type="submit"] {
 	cursor: pointer;
 	color: #000;
 }
@@ -763,7 +766,7 @@ button:hover {
 	-moz-box-shadow: 2px 6px 6px rgba(0, 0, 0, .1) inset !important;
 }
 
-.page-panel label {
+.page-panel label, .nav-panel label {
 	font-weight: bold;
 	font-size: 18px;
 }
