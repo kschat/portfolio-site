@@ -1,0 +1,5 @@
+What does the code below do?
+
+public Car() {
+   //Do something.
+}

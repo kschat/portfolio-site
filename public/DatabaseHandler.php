@@ -115,7 +115,7 @@ class DatabaseHandler {
 		$sql = "DELETE FROM message 
 				WHERE message.message_id = ?";
 
-		return $this->executeQuery($sql, array($id));
+		return $this->executeUpdate($sql, array($id));
 	}
 
 	public function markMessage($id, $value = 0) {

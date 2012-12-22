@@ -1,0 +1,18 @@
+Basic Terms:
+Class- A class is the blueprint of the object that you will be creating, it is where you build an object. Every instance of the object you created uses your class to build it. 
+
+Instances- Instances are simply an object with its own set of data. When you create an object each object gets its own set of data separate from all the other instances of the same object. Each instance is unique.
+
+Constructor- This is what will be used to create an object, it dictates what information should be passed to the object (if any) at the time of its creation and is the first thing that is called when an object is created. There can be multiple constructors for a single object.
+
+Fields (or Attributes)- These are the variables you use to store the information in your object. Objects can contain any number of fields of any data type.
+
+Methods- This is what you will use to change the state of a field, grab the state of a field or perform a calculation on a field. Methods are split up into two main categories, setters and getters (also known as mutators and accessors respectively).
+
+Encapsulation- This is used to keep the fields integrity safe from being changed outside of the object. Instead of giving the programmer that is using your object direct access to the objects fields you give them methods that are used to modify and access the fields.Access specifiers are used to allow (or not allow) access to the data contained in the fields in your object. Methods are usually public while fields are usually private (this will be explained in more detail later in the tutorial). 
+
+Static- When a method is static it means it doesn't need an instance of the object to be created to use the method. This may not make much sense now but it should by the end of the tutorial. 
+
+Method Signature- A method signature is what defines a method. There are six components to a method, which will be covered later in the tutorial. 
+
+UML Diagram- A UML diagram is a tool that programmers use when creating objects. It allows the programmer to view and build the object from an abstract level.

@@ -1,0 +1,5 @@
+To allow programmers to choose how they want to instantiate there object.
+To allow for a default constructor and a more specific one.
+To allow programmers to create objects based on the amount of data they have.
+All of the above.
+3

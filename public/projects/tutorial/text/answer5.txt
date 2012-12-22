@@ -1,0 +1,5 @@
+Make an object called field.
+Create a class called field.
+Returns an object of type field.
+Returns the String value in field.
+3

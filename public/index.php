@@ -7,6 +7,8 @@ if(isset($_COOKIE['username']) && !isset($_SESSION['username'])) {
 if(!isset($_SESSION['username']) || !isset($_COOKIE['username'])) {
 	$_SESSION['username'] = null;
 }
+
+include_once '../config.php';
 ?>
 
 <!DOCTYPE html>

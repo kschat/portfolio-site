@@ -1,0 +1,1 @@
+What is the purpose of creating a class with two constructors?

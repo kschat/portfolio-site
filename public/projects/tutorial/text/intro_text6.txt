@@ -1,0 +1,18 @@
+Taking A Look At the Code
+
+Now that you understand what an object is made up of we can start to take a look at some code and understand what it means. First we're going to look at the syntax for a constructor and some sample constructors. Then we're going to do the same thing for methods.
+
+Constructor and Method Syntax
+Below we have the syntax for a constructor. The constructor header is the first line of the constructor, it tells us what the constructors name is, what has access to the constructor (will be explained in more detail) and what parameters the constructor takes if any. There are two rules you must follow when you make a constructor:
+
+1. A constructor must have the same name as the class that it is in (i.e. if you created a Car class you must have your constructors name be Car too).
+
+2. If there is more then one constructor for a class they must not have the same header (i.e. you can't have two constructors in the same class with the header public Car(), they must be different).
+
+AccessSpecifier ConstructorName(Parameter Variable Declaration) {
+   //Do something
+}
+
+Above is the syntax for a constructor. The access specifier is what determines what code can see and use this specific constructor, there are three values it can be, public, private and protected. Public means that code that is outside of the constructors class can see and use it. Private means only code inside of the constructors class can see and use it. We're not going to go over what protected means as it is not in the scope of this tutorial. 
+
+After the access specifier you must type the constructors name (remember the constructors name must be the same as the class name) followed by a pair of parenthesis. These parenthesis can be left blank or contain Parameters. If a constructor contains a parameter you must declare the parameters data type followed by the name of the parameter. If a constructor contains 2 or more parameters you must declare the data type and name for each parameter, even if the parameters are of the same type (i.e. you can't do the following public Rectangle(Double w, h) as it will cause an error).

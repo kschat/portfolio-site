@@ -1,0 +1,61 @@
+Now lets take a look at the code one block at a time. First lets look at the fields in the class:
+
+private double width, height;
+private static int counter = 0;
+
+As you can see both of these fields are doubles and private, this means that code outside of the rectangle class can't directly access the width and height fields. Since the fields are private it helps keep the data's integrity through encapsulation. Under the width and height field you'll see a field called counter that has the keyword static between private and int. When this keyword is used it allows us to access the data without needing an instance of the object created.
+
+Next we're going to look at the two constructors for the rectangle class:
+
+  public Rectangle() {
+width = 1.0;
+height = 1.0;
+       counter++;
+  }
+
+  public Rectangle(double w, double h) {
+width = w;
+height = h;
+       counter++;
+  }
+
+Here you can see the keyword public. This means that this constructor can be seen and used outside of the Rectangle class, constructors are almost always public. In the first constructor you can see it doesn't take any arguments, and sets both the width and height field to 1.0. The second constructor looks the same as the first but takes two arguments, w and h both of type double. This constructor allows the programmer to specify what they want the width and height of the rectangle object to be the moment the object is made.
+
+  public void setWidth(double w) {
+width = w;
+  }
+
+  public void setHeight(double h) {
+height = h;
+  }
+
+Above we have two setter methods, one for width and the other for height. They both perform the same task but on different fields in the class. 
+
+  public double getWidth() {
+return width;
+  }
+
+  public double getHeight() {
+return height;
+  }
+
+Next we have our getter methods, again one for width and the other for height. 
+
+public double getArea(){
+   return width * height;
+}
+
+public double getPerimeter(){
+   return (2*width) + (2*height);
+}
+
+Now we have two methods that look similar to a getter method. These methods are used to calculate the area and perimeter of the rectangle object and return the result. Neither the area or perimeter are stored in the rectangle class since both can be found through a calculation.
+
+public static int getInstances() {
+   return counter;
+}
+
+The last method in the class is a static method, again meaning we don't need an instance of the Rectangle class to use the method. To access this method all we have to do is call the name of the Class followed by the name of the method, like this:
+
+Rectangle.getInstances();
+

@@ -1,6 +1,8 @@
-
-
-<div id="projects-page-panel" class="page-panel">
+<?php
+include_once '../config.php';
+include_once OBJECTS_PATH . DS . 'project' . DS . 'project.controller.php';
+?>
+<!--<div id="projects-page-panel" class="page-panel">
 	<div class="page-panel-header">
 		<h2>Minecraft Version Control</h2>
 	</div>
@@ -13,10 +15,10 @@
 			version of Minecraft to it's archive. Once configured, the program becomes very useful to anyone who plays on multiple servers of 
 			Minecraft running different versions. 
 			<br /><br />
-			<!--<a id="" href="">Read more...</a>-->
+			<!--<a id="" href="">Read more...</a>
 		</p>
 	</div>
-	<!--
+	
 	<span class="project full-info">
 		<table>
 			<tr>

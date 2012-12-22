@@ -1,0 +1,14 @@
+Taking A Look At the Code Continued
+
+Now lets look at some sample methods. We're going to look at both setter and getter methods. The first method is a setter method, notice how its return type is void. This is because when we set a field in our class we don't need to return anything, just set it. We instead set up a parameter and assign the value of the parameter to the value of the field we want to modify. 
+
+public void setField(int f) {
+   field = f;
+}
+
+Next we have a getter method with the return type of String. Whenever a method has a return type you must have the keyword return in your method. This keyword must then be followed by a variable or value of the return type (i.e. you can't have a return type of String and try to return an int, it will give you an error). 
+
+public String getField() {
+   return field;
+}
+

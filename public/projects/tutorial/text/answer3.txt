@@ -1,0 +1,5 @@
+They are taking a snapshot of the object at that instance.
+They are creating a new object from a class.
+They are making an object instantly.
+None of the above.
+1

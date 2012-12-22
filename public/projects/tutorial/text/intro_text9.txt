@@ -1,0 +1,3 @@
+Creating an Object
+
+The first thing we want to do is decided what type of object we want to create. For this tutorial I'm going to create a Rectangle object as they are easy to understand, don't contain many fields or methods and is the unofficial universal beginning object. Before we jump into coding we need to think about what fields we should have for our Rectangle object. A rectangle contains both a height and width, those will be our fields. For our methods we can do a few things, we can have our rectangle compute its area and perimeter, along with set its length and width, and return its length and width. Next is the Rectangle class that I wrote.

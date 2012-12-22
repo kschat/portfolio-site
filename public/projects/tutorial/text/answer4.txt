@@ -1,0 +1,5 @@
+Create a class for an object called car.
+Create a field called car in a class.
+Create a constructor that is public.
+Create a public method that doesn't return anything.
+2

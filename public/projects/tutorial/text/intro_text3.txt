@@ -1,0 +1,2 @@
+Why OOP?
+Object's are one of the most powerful tools a programmer has, it allows the programmer to easily reuse code, create a data type for a specific task, and easily manage data without worrying about it changing or becoming stale through the use of encapsulation. Objects should be used whenever possible to save in development time and code needed to write. If you look at the Java API you'll see an almost endless list of objects to do just about any task you would want to do.

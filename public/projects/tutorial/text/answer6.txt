@@ -1,0 +1,5 @@
+The hidding of data from outside sources.
+Concationation of one object with the other.
+The process of caping the amount of objects made by a class.
+None of the above.
+0

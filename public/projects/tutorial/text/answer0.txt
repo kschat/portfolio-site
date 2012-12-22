@@ -1,0 +1,5 @@
+A class is a blueprint of an object.
+A class is a file system used to keep track of processes.
+A class is a single bit used to keep track of the state of a object.
+None of the above.
+0

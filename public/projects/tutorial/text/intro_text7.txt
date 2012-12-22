@@ -1,0 +1,23 @@
+Taking A Look At the Code Continued
+
+Now lets take a look at some sample constructors. The first constructor is for the class Car and doesn't have any parameters. In most cases a constructor like this would set the fields of the object to 0 or null.
+
+public Car() {
+   //Do something.
+}
+
+This next constructor is also for the Car class but this time it takes an argument of type Double called m. The constructor takes the value in m and assigns it to the mileage field (the this keyword is used to reference the current object being used).
+
+public Car(Double m) {
+   this.mileage = m;
+}
+
+Below is the syntax for a method. As you can see it looks a lot like the syntax for a constructor except for one difference, a method has one more field called a return type (along with one optional field called static). The return type field is used to specify what type of value (if any) should be returned when the method is done executing. You can have the return type be anything from String to int as long as it is a valid data type. You can also have your method return any type of object. The last value a method can return is void, which means "don't return anything". One other not so obvious difference between a constructor and method header is the method name, since it isn't a constructor you can name the method any legal name. That being said there are some guidelines for naming methods (I say guidelines because you don't have to follow them but it is good practice to do so). Remember that we use our methods to access our fields in our class, because of this methods are almost always set to public.
+
+1. The first letter of the method should be lowercase, followed by camel case (i.e. getField()).
+
+2. For getter and setter methods you should have the first word of the method be get or set respectively. 
+
+AccessSpecifier ReturnType methodName(Parameter Variable Declaration) {
+   //Do something
+}

@@ -1,0 +1,5 @@
+A diagram used to create XML for an object.
+A diagram used to find weaknesses in a class design.
+A diagram used to design an object before implementation.
+A diagram used to create the logical structure of a program.
+2

@@ -1,0 +1,5 @@
+To list the name and fields of an object.
+To label what the object does when it is constructed.
+To setup all fields with the approriate data when an object is created.
+To call the toString function.
+2
