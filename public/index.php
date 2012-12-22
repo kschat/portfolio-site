@@ -150,25 +150,22 @@ if(!isset($_SESSION['username']) || !isset($_COOKIE['username'])) {
 				</div>
 
 				<div id="settings-panel" class="nav-panel">
-					<div class="panel-content">
-						<img src="" />
+					<div class="panel-content nav-settings">
+						<ul>
+							<li><a href="#">Messages</a></li>
+							<li><a id="signout-link" href="">Sign out</a></li>
+						</ul>
 					</div>
-					
-					<form>
-						<a id="signout-link" href="">Sign out</a>
-					</form>
 				</div>
 			</div>
 		</div>
 
 		<div id="main-content">
-			<p>
 			<?php 
 				if(isset($_SESSION['user_id']) && $_SESSION['user_id'] == 22) {
 					include_once 'messagePanel.php';
 				} 
 			?>
-			</p>
 			<noscript>
 				<div id="javascript-warning" class="error-panel">
 					<p>Please enable Javascript to properly use this site.</p>

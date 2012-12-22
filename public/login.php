@@ -15,7 +15,7 @@ if(isset($_POST['login-email']) && trim($_POST['login-email']) !== '' &&
 	$password = trim($_POST['login-password']);
 	$bcrypt = new Bcrypt(12);
 	
-	$sql = 'SELECT user.user_password, user.user_firstname FROM user WHERE user.user_email = ?;';
+	$sql = 'SELECT user.user_password, user.user_firstname, user.user_id FROM user WHERE user.user_email = ?;';
 	$sth = $dbh->prepare($sql);
 	$sth->execute(array($email));
 	
@@ -23,6 +23,7 @@ if(isset($_POST['login-email']) && trim($_POST['login-email']) !== '' &&
 		if($bcrypt->verify($password, $row[0])) {
 			$response['error'] = false;
 			$_SESSION['firstname'] = $response['firstname'] = $row[1];
+			$_SESSION['user_id'] = $row[2];
 		}
 	}
 	
