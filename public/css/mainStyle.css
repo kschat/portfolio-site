@@ -602,7 +602,11 @@ button:hover {
 .resume-list {
 	margin: 0;
 	padding: 0;
-	list-style: none;
+	list-style-type: none;
+}
+
+.bulleted {
+	list-style-type: disc !important; 
 }
 
 .page-panel input[type="text"], .page-panel input[type="password"] {
