@@ -1,3 +1,7 @@
+<script type="text/javascript">
+	$('.project-image-link').colorbox({maxWidth: '90%', maxHeight: '90%'});
+</script>
+
 <?php
 include_once BASE_PATH . DS . 'public' . DS . 'databaseConnect.php';
 include_once CLASS_PATH . DS . 'template.class.php';

@@ -280,7 +280,7 @@ a:focus, a:active {
 #settings-panel {
 	display: none;
 	z-index: 0;
-	width: 200px;
+	width: 150px;
 }
 
 .error-panel {
@@ -327,14 +327,15 @@ a:focus, a:active {
 input[type=text], input[type=password], textarea {
 	height: 15px;
 	border: 1px solid #9B9B9B;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-input[type=text]:hover, input[type=password]:hover, textarea {
+input[type=text]:hover, input[type=password]:hover {
 	outline: none;
 	border: 1px solid #626161;
 }
 
-input[type=text]:focus, input[type=password]:focus, textarea {
+input[type=text]:focus, input[type=password]:focus {
 	outline: none;
 	border: 1px solid #56A5EC;
 }
@@ -587,6 +588,7 @@ button:hover {
 
 .resume-container {
 	padding-right: 20px;
+	font-size: 17px;
 }
 
 .resume-header {
@@ -624,6 +626,17 @@ button:hover {
 	border: 1px solid #9B9B9B;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
+	outline: 0;
+}
+
+.page-panel textarea:hover {
+	outline: none;
+	border: 1px solid #626161;
+}
+
+.page-panel textarea:focus {
+	outline: none;
+	border: 1px solid #56A5EC;
 }
 
 .page-panel input[type="submit"], .nav-panel button[type="submit"] {
@@ -648,7 +661,7 @@ button:hover {
 	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
 }
 
-.page-panel input[type="submit"]:hover, .nav-panel button[type="submit"] {
+.page-panel input[type="submit"]:hover, .nav-panel button[type="submit"]:hover {
 	cursor: pointer;
 	color: #000;
 }
@@ -666,7 +679,7 @@ button:hover {
 }
 
 .nav-settings {
-	text-align: center;
+	font-size: 16px;
 }
 
 .nav-settings ul {
@@ -682,10 +695,21 @@ button:hover {
 }
 
 .nav-settings ul li:hover {
-	background: #1B1B1B;
+	background: #2580A2;
+}
+
+.nav-settings ul li:hover > a {
+	color: #fff;
 }
 
 .nav-settings ul li a {
 	display: block;
-	width: 100%;
+	text-decoration: none;
+	color: #000;
+	padding: 0 20px;
+}
+
+#settings-panel {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
 }

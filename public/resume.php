@@ -12,13 +12,24 @@
 				<ul class="resume-list resume-indent">
 					<li>One College Avenue, Williamsport, PA 17701</li>
 					<li>Completed third year.</li>
-					<li>Graduation GPA: 3.46/4.0</li>
-					<li>Major GPA: 3.66/4.0</li>
+					<li>Graduation GPA: 3.47/4.0</li>
+					<li>Major GPA: 3.68/4.0</li>
 				</ul>
 			</div>
 		</div>
 
 		<h2 class="resume-header">Experience</h3>
+		<div class="resume-indent">
+			<h3 class="resume-header">Freelance Web Developer</h3>
+			<div class="resume-indent">
+				<h4 class="resume-header">December 2012 - February 2013</h4>
+				<p class="resume-indent">
+					Developed front and back end of a legal document annotation social network. PHP and Yii were used as the server side development environment. Bootstrap, 
+					Backbone, Require, and jQuery were used on the front end.
+				</p>
+			</div>
+		</div><br />
+
 		<div class="resume-indent">
 			<h3 class="resume-header">Front and Back End Web Developer</h3>
 			<div class="resume-indent">
@@ -32,11 +43,12 @@
 
 		<h2 class="resume-header">Projects</h2>
 		<div class="resume-indent">
-			<h3 class="resume-header">Minecraft Version Control</h3>
+			<h3 class="resume-header">Scheduler</h3>
 			<p class="resume-indent">
-				Designed, developed, and tested a Java application that allows users to easily switch between different versions of the game Minecraft. The program was developed 
-				to run natively on both Windows and OS X. The project is currently on <a href="https://github.com/kschat/MCVersion-Control">github</a> to keep track of versions 
-				and allow for easy team development in the future.
+				An easier way to scheduler classes at Pennsylvania College of Technology. Developed using Node and Express for the server side environment and REST API, MongoDB 
+				as the database with Mongoose as the middleware to interface with the database and create models, Jade as the template engine, and Mocha along with Should for 
+				testing and assertion frameworks. The project is currently on <a href="https://github.com/kschat/Scheduler">github</a> to keep track of versions and 
+				allow for easy team development in the future.
 			</p>
 			
 			<h3 class="resume-header">Java Installer API</h3>
@@ -46,27 +58,38 @@
 				to keep track of versions and allow for easy team development in the future.
 			</p>
 
-			<h3 class="resume-header">Elite Security Alliance Website</h3>
+			<h3 class="resume-header">TF2 Outpost Price Integration</h3>
 			<p class="resume-indent">
-				Created the website for a Pennsylvania College of Technology student club known as The Elite Security Alliance. The site was developed to test a mini-CMS that I created.
-				Features of the site include the ability to add and edit pages, panels, users, and permissions. The project is a work in progress and is currently on 
-				<a href="https://github.com/kschat/ESA">github</a>.
+				A Chrome extension developed using JavaScript. A few frameworks were also used to help with various aspects of the extension; these frameworks being require.js 
+				to help with structuring modules and load only what is necessary, backbone.js to help structure the extension into a MV* pattern, and jQuery to abstract browser 
+				specific DOM manipulations. The project is currently on <a href="https://github.com/kschat/tf2outpost-prices-chrome-extension">github</a>
+				to keep track of versions and allow for easy team development in the future.
 			</p>
 		</div>
 
 		<h2 class="resume-header">Technical Skills</h2>
 		<div class="resume-indent">
+			<h3 class="resume-header">Operating Systems</h3>
+			<p class="resume-indent">Windows (XP, Vista, 7, & 8), OS X (10.6 – 10.7), Linux (Debian based)</p>
+
 			<h3 class="resume-header">Programming</h3>
-			<p class="resume-indent">Java, C++, C# and XNA, ActionScript 3.0, Javascript and JQuery, CSS and HTML, MySQL, and PHP</p>
+			<p class="resume-indent">Java, C++, JavaScript, Node, CSS, HTML, MySQL, MongoDB, PHP</p>
+
+			<h3 class="resume-header">Frameworks</h3>
+			<p class="resume-indent">
+				JavaScript - Express, Require, Backbone, Underscore, jQuery, Mongoose<br />
+				PHP - Yii<br />
+				CSS - Bootstrap<br />
+			</p>
 
 			<h3 class="resume-header">Tools</h3>
-			<p class="resume-indent">Putty, CoreFTP, Fetch, Visual Studio 2010 Express, Eclipse, Dreamweaver, Photoshop, Flash, VirtualBox, TeamViewer, DropBox, WAMP/MAMP, PHPmyAdmin, and Apache</p>
+			<p class="resume-indent">Git, Putty, CoreFTP, Fetch, Sublime Text 2, Eclipse, VirtualBox, TeamViewer, DropBox, WAMP/MAMP, PHPmyAdmin, and Apache</p>
 		</div>
 
 		<h2 class="resume-header">Activites and Achievements</h2>
 		<div class="resume-indent">
 			<ul class="resume-list">
-				<li>Achieved Dean's List for Spring 2011, Fall 2011, and Spring 2012 semesters</li>
+				<li>Achieved Dean's List for Spring 2011, Fall 2011, Spring 2012, and Fall 2012 semesters</li>
 				<li>Member of the Penn College Programming Club</li>
 				<li>Member of the Penn College Security Club</li>
 				<li>Member of the Penn College Association for Computer Machinery</li>

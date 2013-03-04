@@ -22,9 +22,11 @@ include_once '../config.php';
 		<link rel="stylesheet" type="text/css" href="css/mainStyle.css" />
 		<link rel="stylesheet" type="text/css" href="css/font-awesome-ie7.css" />
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+		<link rel="stylesheet" tyle="text/css" href="css/colorbox.css" />
 		
 		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
 		<script type="text/javascript" src="js/top-nav.js"></script>
+		<script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
 		<script type="text/javascript">
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-34754817-1']);
@@ -170,12 +172,12 @@ include_once '../config.php';
 							I am a 23 year old Web and Application Programmer from Allentown Pennsylvania. I'm currently in my last year at Pennsylvania College of Technology
 							for a Bachelors in Software Engineering. I've been programming for 6 years now and have loved every second of it. I started out with C++ and Java in
 							high school, but switched gears a bit to web development in college. In my free time I like to work on open source projects and learn more about programming.
-							 Over the summer I worked as freelance developer for a hair style website called blacknaps.org where I developed both the front and back end of a WordPress plugin.
-							 Being as that project is now in the maintance phase I'm looking to take on more freelance work.
+							 Over the summer I worked as a freelance developer for a hair style website called blacknaps.org where I developed both the front and back end of a WordPress plugin.
 							<br /><br />
-							There are two places you can view the projects I am or have worked on. One being here, on the projects page; the second being on my github.
+
+							There are two places you can view the projects I am currently or have worked on. One being here, on the projects page; the second being on my github.
 							If you're interested in me doing web development for you, please feel free to contact me view email. My resume is also here to view and download.
-							It contains my most recient projects and my academic information.
+							It contains my most recent projects and my academic information.
 
 
 						</p>

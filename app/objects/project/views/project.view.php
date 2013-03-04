@@ -5,7 +5,10 @@
 	
 	<div class="project content">
 		<p>
-			<img class="project-image" src="images/<?php echo $this->image; ?>" />
+			<a class="project-image-link" href="images/<?php echo $this->image; ?>">
+				<img class="project-image profile-image" src="images/<?php echo $this->image; ?>" />
+			</a>
+
 			<?php echo $this->description; ?>
 		</p>
 	</div>

@@ -111,6 +111,7 @@ var WIDGETS = {
 		
 		if(widget != false) {
 			widget.showWidget(event, speed, callBack);
+			console.log(widget);
 		}
 	},
 	hideWidget:			function(selector, event, speed, callBack) {
@@ -118,6 +119,7 @@ var WIDGETS = {
 		
 		if(widget != false) {
 			widget.hideWidget(event, speed, callBack);
+			console.log(widget);
 		}
 	},
 	getWidget:			function(key, side) {
@@ -585,36 +587,10 @@ $(document).ready(function() {
 		signupForm:			new FormView($('#signup-panel-form'))
 	});
 	
-	var contactForm = new FormView($('#contact-form'));
-
-	$('#send-message').live('click', function(event) {
-		$.ajax({
-			url: 'sendMessage.php',
-			type: 'POST',
-			dataType: 'json',
-			data: {
-				'sender-name': $('#sender-name').val(),
-				'sender-email': $('#sender-email').val(),
-				'sender-message': $('#sender-message').val()
-			},
-			success: function(data, textStatus, jqXHR) {
-				if(!data.error) {
-					$('#sender-name').val('');
-					$('#sender-email').val('');
-					$('#sender-message').val('');
-					//$('#contact-form').filter(':input:not(:submit)').val('');
-				}
-
-				$('#contact-response-message').text(data.message).show();
-			},
-			error: function(jqXHR, textStatus, errorThrown) {
-				alert('There was an error while trying to contact the server.');
-			}
-		});
-		return false;
-	});
-
+	
+	
 	if(username) {
+		console.log(readCookie('username'));
 		WIDGETS.setOnTop('#settings', SideEnum.RIGHT);
 	}
 	
@@ -806,6 +782,10 @@ $(document).ready(function() {
 	});
 	
 	$('#center-content, #banner').hide();
+	
+	if(firstname == null || $.trim(firstname) == "") {
+		signedIn = true;
+	}
 	
 	if(page == 'home') {
 		var linkQuery = {
